@@ -1,0 +1,20 @@
+<div class="col-12">
+  <div class="row">
+    <div class="col-5">
+      <img class="img-thumbnail" src="{{ shoe?.image}}">
+    </div>
+    <div class="col-7">
+      <div class="row">
+        <div class="col-12">
+          <h3>{{shoe?.name}}</h3>
+          <br>
+          <button class="btn btn-dark"
+            type="button"
+            [routerLink]="'product/' + shoe?.id + '/view'">
+            View
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
